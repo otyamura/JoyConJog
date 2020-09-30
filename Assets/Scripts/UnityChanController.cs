@@ -43,6 +43,7 @@ public class UnityChanController : MonoBehaviour
 
     void Update()
     {
+    /*
         if (m_joycons == null || m_joycons.Count <= 0) return;
         //var accelR = m_joyconR.GetAccel();  // 加速度
         //Debug.Log("accelR" + accelR);
@@ -86,9 +87,9 @@ public class UnityChanController : MonoBehaviour
                 animator.SetBool("Running", false);
             }
         }
+        */
 
 
-        /*
         //地面に接触していると作動する
         if (ground)
         {
@@ -132,7 +133,6 @@ public class UnityChanController : MonoBehaviour
                     rb.AddForce(transform.forward * thrust + transform.up * thrust);
             }
         }
-        */
     }
 
     //Planに触れている間作動
