@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3676160302051672519}
   - component: {fileID: 4652312771348864421}
   - component: {fileID: 1807080537296191536}
-  - component: {fileID: -980763508575010247}
+  - component: {fileID: 2375652367769754886}
   m_Layer: 0
   m_Name: Right_Right OpenVR Controller
   m_TagString: Untagged
@@ -53,7 +53,7 @@ MonoBehaviour:
     id: 0
     description: None
     axisConstraint: 0
-  handedness: 1
+  handedness: 2
 --- !u!114 &3676160302051672519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,8 +113,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-980763508575010247
-BoxCollider:
+--- !u!135 &2375652367769754886
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -124,5 +124,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.1
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
