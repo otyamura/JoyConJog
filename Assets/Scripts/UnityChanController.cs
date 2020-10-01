@@ -10,7 +10,8 @@ public class UnityChanController : MonoBehaviour
     //Rigidbodyを変数に入れる
     Rigidbody rb;
     //移動スピード
-    public float speed = 3f;
+    public float mulSpeed = 1.5f;
+    float speed = 3f;
     //ジャンプ力
     public float thrust = 200;
     //Animatorを入れる変数
@@ -53,7 +54,6 @@ public class UnityChanController : MonoBehaviour
             Debug.Log("accelL" + accelL);
             //var accelAve = (accelR.magnitude + accelL.magnitude ) / 2.0f;
             float accelMag = accelL.magnitude;
-            const float mulSpeed = 1.5f;
             speed = accelMag * mulSpeed;
             accelMag /= 3.0f;
             Debug.Log("accelMag" + accelMag);
